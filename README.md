@@ -2,8 +2,24 @@
 
 [![License](https://img.shields.io/badge/License-Apache%202.0-blue.svg)](https://opensource.org/licenses/Apache-2.0)
 [![Python](https://img.shields.io/badge/python-3.8+-blue.svg)](https://www.python.org/downloads/)
+[![PyPI version](https://img.shields.io/pypi/v/gauge-pybuild-plugin.svg)](https://pypi.org/project/gauge-pybuild-plugin/)
+[![Downloads](https://img.shields.io/pypi/dm/gauge-pybuild-plugin.svg)](https://pypi.org/project/gauge-pybuild-plugin/)
 
 A comprehensive Python build plugin for [Gauge](https://gauge.org/) testing framework, inspired by the [Gauge Gradle Plugin](https://github.com/getgauge/gauge-gradle-plugin). This plugin provides seamless integration with UV, Poetry, setuptools, and standalone CLI functionality for running Gauge specifications in Python projects.
+
+## Quick Start
+
+```bash
+# Install from PyPI
+pip install gauge-pybuild-plugin
+
+# Run your Gauge specs
+gauge-py run
+
+# Or use with UV for faster performance
+uv pip install gauge-pybuild-plugin
+uv run gauge-py run --parallel --nodes=4
+```
 
 ## Features
 
@@ -54,6 +70,19 @@ Before using this plugin, you need:
 
 ## Installation
 
+### Quick Install from PyPI 📦
+
+```bash
+# Using pip (works everywhere)
+pip install gauge-pybuild-plugin
+
+# Using UV (recommended - 10-100x faster!)
+uv pip install gauge-pybuild-plugin
+
+# Using Poetry
+poetry add gauge-pybuild-plugin
+```
+
 ### Using UV (Recommended - Fast!) ⚡
 
 UV is a modern, Rust-based Python package manager that's 10-100x faster than pip.
@@ -62,7 +91,7 @@ UV is a modern, Rust-based Python package manager that's 10-100x faster than pip
 # Install UV first (if not already installed)
 curl -LsSf https://astral.sh/uv/install.sh | sh
 
-# Install the plugin
+# Install the plugin from PyPI
 uv pip install gauge-pybuild-plugin
 
 # Or add to your project
@@ -621,7 +650,8 @@ This project is licensed under the Apache License 2.0 - see the [LICENSE](LICENS
 
 ## Support
 
-- 📖 [Gauge Documentation](https://docs.gauge.org/)
+- � [PyPI Package](https://pypi.org/project/gauge-pybuild-plugin/)
+- �📖 [Gauge Documentation](https://docs.gauge.org/)
 - 🐛 [Report Issues](https://github.com/lirany1/gauge-pybuild-plugin/issues)
 - 💬 [Gauge Community](https://github.com/getgauge/gauge/discussions)
-- 📧 [Contact](mailto:your.email@example.com)
+- 🌟 [GitHub Repository](https://github.com/lirany1/gauge-pybuild-plugin)
