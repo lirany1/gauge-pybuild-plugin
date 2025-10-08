@@ -79,7 +79,7 @@ poetry = {version = "^1.4.0", optional = true}
 poetry = ["poetry"]
 
 [tool.poetry.group.dev.dependencies]
-pytest = "^7.0.0"
+pytest = "^8.3.5"
 pytest-cov = "^4.0.0"
 black = "^23.0.0"
 isort = "^5.12.0"
