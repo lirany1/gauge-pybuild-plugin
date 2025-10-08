@@ -41,13 +41,13 @@ class GaugeConfig(BaseModel):
     environment_variables: Dict[str, str] = Field(default_factory=dict, description="Additional environment variables")
 
     @validator('nodes')
-    def validate_nodes(self, v):
+    def validate_nodes(cls, v):
         if v < 1:
             raise ValueError('nodes must be at least 1')
         return v
 
     @validator('specs_dir')
-    def validate_specs_dir(self, v):
+    def validate_specs_dir(cls, v):
         if v and not Path(v).exists():
             print(f"Warning: specs directory '{v}' does not exist")
         return v

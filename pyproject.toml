@@ -103,7 +103,7 @@ target-version = "py38"
 
 [tool.ruff.lint]
 select = ["E", "F", "I", "N", "W", "UP"]
-ignore = []
+ignore = ["N805"]  # Allow cls as first argument for Pydantic validators
 
 [tool.ruff.format]
 quote-style = "double"
